@@ -1,66 +1,77 @@
-import React from 'react'
-import { FaXTwitter, FaInstagram, FaVideo, FaTelegram, FaLinkedin } from "react-icons/fa6";
+import React from "react";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaXTwitter, FaYoutube } from "react-icons/fa6";
 
-function FooterPage() {
+const Footer = () => {
   return (
-    <div>
-         <footer className="bg-black text-white py-10 px-6 md:px-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        
-        {/* Logo & Social Media */}
-        <div>
-          <h2 className="text-2xl font-bold">
-            Intel<span className="text-teal-400">isync</span>
-          </h2>
-          <p className="mt-4 text-sm italic">Follow us on</p>
-          <div className="flex space-x-4 mt-2">
-            <FaXTwitter className="text-white hover:text-teal-400 cursor-pointer text-xl" />
-            <FaInstagram className="text-white hover:text-teal-400 cursor-pointer text-xl" />
-            <FaVideo className="text-white hover:text-teal-400 cursor-pointer text-xl" />
-            <FaTelegram className="text-white hover:text-teal-400 cursor-pointer text-xl" />
-            <FaLinkedin className="text-white hover:text-teal-400 cursor-pointer text-xl" />
+    <footer className="relative bg-black text-white py-12 px-6">
+      <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-cyan-500 to-teal-500" />
+      <div className="max-w-7xl mx-auto flex flex-wrap justify-between">
+        <div className="w-full md:w-1/3 mb-6">
+          <h2 className="text-2xl font-bold">Inteli<span className="text-cyan-500">sync</span></h2>
+          <p className="text-sm mt-3 text-gray-400">
+            Intelisync leads the way in transformative solutions across blockchain, Web3, and AI,
+            enabling businesses to thrive in the digital age. With a focus on decentralized
+            technologies, custom blockchain development, and strategic growth marketing, we empower
+            companies to innovate and lead.
+          </p>
+          <div className="flex space-x-3 mt-4">
+            <div className="p-2 bg-gray-800 rounded-full hover:bg-cyan-500 transition">
+              <FaFacebookF className="text-white" />
+            </div>
+            <div className="p-2 bg-gray-800 rounded-full hover:bg-cyan-500 transition">
+              <FaInstagram className="text-white" />
+            </div>
+            <div className="p-2 bg-gray-800 rounded-full hover:bg-cyan-500 transition">
+              <FaLinkedinIn className="text-white" />
+            </div>
+            <div className="p-2 bg-gray-800 rounded-full hover:bg-cyan-500 transition">
+              <FaXTwitter className="text-white" />
+            </div>
+            <div className="p-2 bg-gray-800 rounded-full hover:bg-cyan-500 transition">
+              <FaYoutube className="text-white" />
+            </div>
           </div>
         </div>
-
-        {/* Company Links */}
-        <div>
-          <h3 className="text-lg font-semibold">Company</h3>
-          <ul className="mt-4 space-y-2 text-gray-300">
-            <li><a href="#" className="hover:text-white">About</a></li>
-            <li><a href="#" className="hover:text-white">Services</a></li>
-            <li><a href="#" className="hover:text-white">Blog</a></li>
+        <div className="w-full md:w-1/5 mb-6">
+          <h3 className="font-semibold text-lg mb-3">Company</h3>
+          <ul className="text-gray-400 space-y-2">
+            <li>About</li>
+            <li>Events</li>
+            <li>Blog</li>
+            <li>Careers</li>
+            <li>Global Presence</li>
+            <li>Contact</li>
+            <li>FAQ’s</li>
+            <li>Terms & Conditions</li>
+            <li>Privacy Policy</li>
           </ul>
         </div>
-
-        {/* Support Links */}
-        <div>
-          <h3 className="text-lg font-semibold">Support</h3>
-          <ul className="mt-4 space-y-2 text-gray-300">
-            <li><a href="#" className="hover:text-white">FAQ's</a></li>
-            <li><a href="#" className="hover:text-white">Contact us</a></li>
-            <li><a href="#" className="hover:text-white">Terms & Conditions</a></li>
-            <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
+        <div className="w-full md:w-1/5 mb-6">
+          <h3 className="font-semibold text-lg mb-3">Services</h3>
+          <ul className="text-gray-400 space-y-2">
+            <li>Artificial Intelligence (AI)</li>
+            <li>Growth Marketing</li>
+            <li>Blockchain Services</li>
+            <li>Public Relations</li>
+            <li>Strategic Advisory</li>
+            <li>Branding</li>
+            <li>Community Management</li>
+            <li>Influencer Marketing</li>
           </ul>
         </div>
-
-        {/* Contact Info */}
-        <div>
-          <h3 className="text-lg font-semibold">Contact Info</h3>
-          <p className="mt-4 text-gray-300">
-            <strong>Location:</strong> Al Karama - Dubai - United Arab Emirates
-          </p>
-          <p className="mt-2 text-gray-300">
-            <strong>Email:</strong> connect@intelisync.ai
-          </p>
-          <p className="mt-2 text-gray-300">
-            <strong>Phone:</strong> +971 54 5720 844
-          </p>
+        <div className="w-full md:w-1/5">
+          <h3 className="font-semibold text-lg mb-3">Global Services</h3>
+          <ul className="text-gray-400 space-y-2">
+            <li>Dubai - UAE | Intelisync</li>
+            <li>India – Pune | Intelisync Technology Pvt Ltd</li>
+            <li>Singapore | Intelisync Pvt Ltd</li>
+            <li>Boston | USA</li>
+            <li>London | United Kingdom</li>
+          </ul>
         </div>
-        
       </div>
     </footer>
-    </div>
-  )
-}
+  );
+};
 
-export default FooterPage
+export default Footer;
